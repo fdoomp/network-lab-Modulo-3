@@ -29,8 +29,7 @@ fsck -y /dev/sda2
 ---------------------------------------------------------------------------------
 MODULO III PRACTICA 2
 
-
-cd /
+cd / 
 
 mkdir Backups2 
 
@@ -38,21 +37,21 @@ cd Backups2
 
 nano backuplm.sh 
 
-#!/bin/bash
+#!/bin/bash 
 
 # Obtener la fecha y hora
-DATE=$(date +"%d-%m-%Y:%H:%M")
+Date=$(date +%d-%m-%Y:%H:%M)
 
-# Crear el backup on tar
-tar -czvf "/Backups2/" "$Date".tar.gz" /home/fernando
+# Crear el backup con tar
+tar -czvf "/Backups2/"$Date".tar.gz" /home/fernando
 
 chmod 744 backuplm.sh 
 
 ./backuplm.sh 
 
-tar -xzvf /Backups2/14-10-2025:11:18.tar.gz -C /Backups2/ 
+ls 
 
-ls
+tar -xzvf /Backups2/14-10-2025:11:18.tar.gz -C /Backups2/ 
 
 cd home
 
@@ -72,16 +71,17 @@ read nombre
 
 ifconfig > /home/fernando/Desktop/$nombre.txt 
 
-chmod 744 backuplm2.sh
+chmod 744 backuplm2.sh 
 
-./backuplm2.sh
+./backuplm2.sh 
+
+ModuloIII 
 
 reboot
 
 cd Desktop
 
-cat ModuloIII.txt
+cat ModuloIII.txt 
 
 ----------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
-
