@@ -63,13 +63,12 @@ cd Desktop
 
 nano backuplm2.sh
 
-#!/bin/bash 
+#!/bin/bash
 
-echo"Cual nombre desea ponerle al archivo" 
+echo "Cual nombre desea ponerle al archivo"
+read nombre
 
-read nombre 
-
-ifconfig > /home/fernando/Desktop/$nombre.txt 
+ifconfig > "/home/fernando/Escritorio/${nombre}.txt"
 
 chmod 744 backuplm2.sh 
 
@@ -81,7 +80,7 @@ reboot
 
 cd Desktop
 
-cat ModuloIII.txt 
+cat "/home/fernando/Escritorio/Modulo III.txt" 
 
 ----------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
