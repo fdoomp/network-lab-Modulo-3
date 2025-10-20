@@ -82,5 +82,33 @@ cd Desktop
 
 cat "/home/fernando/Escritorio/Modulo III.txt" 
 
-----------------------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+MODULO III PRACTICA 3
+
+ip a 
+
+dnf install openssh-server 
+
+systemctl start sshd 
+
+systemctl status sshd 
+
+ssh fernando@192.168.7.00
+
+ssh-keygen
+
+ls
+
+ls -a
+
+cd .ssh
+
+nano authorized_keys
+
+su 
+
+systemctl restart sshd 
+
+ssh fernando@192.168.7.100
+
